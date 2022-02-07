@@ -1,0 +1,47 @@
+<div class="root">
+    <div class="three-clip"></div>
+    <div class="html-clip">
+        <div class="background-grad"></div>
+        <div class="welcome-text-wrapper">
+            <div class="welcome-text">
+                <div class="welcome-later later" mc-for="key,item" mc-of="initParams.welcome[0]">
+                    {{item}}
+                </div>
+            </div>
+            <div class="welcome-text">
+                <div class="welcome-later later" mc-for="key,item" mc-of="initParams.welcome[1]">
+                    {{item}}
+                </div>
+            </div>
+            <div class="welcome-text">
+                <div class="welcome-later later" mc-for="key,item" mc-of="initParams.welcome[2]">
+                    {{item}}
+                </div>
+            </div>
+        </div>
+        <div class="first-text-wrapper">
+            <div class="first-text">
+                <div class="first-text-later" mc-for="key,item" mc-of="initParams.firstParagraph">
+                    <div mc-if="item === ' '">
+                        &nbsp;
+                    </div>
+                    {{item}}
+                </div>
+            </div>
+        </div>
+        <div class="second-text-wrapper">
+            <div class="second-text">
+                <div class="second-text-later" mc-for="key,item" mc-of="initParams.secondParagraph">
+                    <div mc-if="item === ' '">
+                        &nbsp;
+                    </div>
+                    {{item}}
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-wrapper">
+            <div class="subscribe-text">Subscribe to our newsletter</div>
+            <a href="https://cdn.forms-content.sg-form.com/106a236e-8761-11ec-a097-765329616d49" target="_black" class="subscribe-button"> Subscribe</a>
+        </div>
+    </div>
+</div>
