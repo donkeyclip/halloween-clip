@@ -4,16 +4,7 @@ import css from "!!raw-loader!./clip.css";
 import { initParams } from "./initParams";
 import threejsDefinition from "@donkeyclip/motorcortex-threejs";
 const threejs = loadPlugin(threejsDefinition);
-import {
-  scene,
-  sceneAnimation,
-  ground,
-  cameraLookAt,
-  // opacity,
-  // cameraAnimation2,
-  // cameraAnimation3,
-  // cameraAnimation4,
-} from "./incidents";
+import { scene, sceneAnimation, ground, cameraLookAt } from "./incidents";
 import { introScene } from "./scenes/intro";
 import { firstScene } from "./scenes/scene1";
 import { secondScene } from "./scenes/scene2";
@@ -57,6 +48,7 @@ const songPlayback = new AudioPlayback({
 });
 
 clip.addIncident(songPlayback, 10);
+
 const threeClip = new threejs.Clip(
   {
     renderers: {

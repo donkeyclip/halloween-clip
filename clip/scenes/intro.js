@@ -1,4 +1,4 @@
-import { animate, cameraAnimation } from "../incidents";
+import { animate, cameraAnimation, objectAnimation } from "../incidents";
 
 export const introScene = (threeClip, clip, fromDuration, toDuration) => {
   // show the welcome text
@@ -18,8 +18,13 @@ export const introScene = (threeClip, clip, fromDuration, toDuration) => {
 
   //   got to the moon scene
   threeClip.addIncident(
-    cameraAnimation({ x: 1, y: 1, z: -8 }, toDuration * 0.4, "easeOutCubic"),
+    cameraAnimation({ x: 1, y: 1, z: -8 }, toDuration * 0.48, "easeOutCubic"),
     fromDuration + toDuration * 0.53
+  );
+  //   got object instanstly
+  threeClip.addIncident(
+    objectAnimation({ x: 0, y: -1, z: -45 }, 1),
+    fromDuration + toDuration
   );
   //   hide the welcome text
   clip.addIncident(
