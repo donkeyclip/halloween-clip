@@ -14,4 +14,15 @@ export const firstScene = (threeClip, clip, fromDuration, toDuration) => {
     cameraAnimation({ x: 2, y: 1, z: 2.5 }, toDuration - 1),
     fromDuration + 1
   );
+
+  clip.addIncident(
+    animate(
+      { opacity: 1 },
+      ".first-text-later",
+      toDuration,
+      "linear",
+      "@stagger(0, 2000)"
+    ),
+    fromDuration + 1
+  );
 };

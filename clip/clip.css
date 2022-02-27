@@ -32,11 +32,14 @@
   top: 50%; 
   right: 50%;
   transform: translate(50%,-50%);
-  opacity: 0;
+}
+.welcome-text-wrapper{
+  opacity:0
 }
 
 .first-text-wrapper,.second-text-wrapper{
-  top: 25%;
+  bottom: 50px;
+  top:unset;
 }
 
 .welcome-text{
@@ -68,9 +71,8 @@
 }
 
 
-.first-text,.second-text{
+.first-text-wrapper,.second-text-wrapper{
   width: 1500px;
-  height: 300px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -78,10 +80,16 @@
   align-content: flex-start;
 }
 
-
+.scene-text {
+      display: flex;
+      width: 1880px;
+      height: 100%;
+      position: relative;
+      flex-wrap: wrap;
+}
 .first-text-later,.second-text-later{
-  font-size: 30px;
-  height: 30px;
+  font-size: 50px;
+  height: 50px;
   color: white;
   float: left;
   font-family: 'Griffy', cursive;

@@ -32,39 +32,35 @@
         </div>
       </div>
     </div>
-    <div class="first-text-wrapper">
-      <div class="first-text">
+    <div class="scene-text">
+      <div class="first-text-wrapper">
         <div
           class="first-text-later"
           mc-for="key,item"
-          mc-of="initParams.firstParagraph"
+          mc-of="initParams.firstText"
         >
-          <div mc-if="item === ' '">&nbsp;</div>
-          {{item}}
+          {{item}}&nbsp;
         </div>
       </div>
-    </div>
-    <div class="second-text-wrapper">
-      <div class="second-text">
+      <div class="second-text-wrapper">
         <div
           class="second-text-later"
           mc-for="key,item"
-          mc-of="initParams.secondParagraph"
+          mc-of="initParams.secondText"
         >
-          <div mc-if="item === ' '">&nbsp;</div>
-          {{item}}
+          {{item}}&nbsp;
         </div>
       </div>
-    </div>
-    <div class="subscribe-wrapper">
-      <div class="subscribe-text">Subscribe to our newsletter</div>
-      <a
-        href="https://cdn.forms-content.sg-form.com/106a236e-8761-11ec-a097-765329616d49"
-        target="_black"
-        class="subscribe-button"
-      >
-        Subscribe</a
-      >
+      <div class="subscribe-wrapper">
+        <div class="subscribe-text">Subscribe to our newsletter</div>
+        <a
+          href="https://cdn.forms-content.sg-form.com/106a236e-8761-11ec-a097-765329616d49"
+          target="_black"
+          class="subscribe-button"
+        >
+          Subscribe</a
+        >
+      </div>
     </div>
   </div>
 </div>

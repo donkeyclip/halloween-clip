@@ -77,7 +77,26 @@ const threeClip = new threejs.Clip(
         },
       },
     ],
-    entities: [scene, ground, cameraLookAt],
+    entities: [
+      ground,
+      cameraLookAt,
+      {
+        geometry: { type: "PlaneGeometry", parameters: [2.65, 0.1] },
+        material: {
+          type: "MeshBasicMaterial",
+          parameters: [
+            {
+              color: "#0a2d44",
+              side: "DoubleSide",
+            },
+          ],
+        },
+        settings: {
+          position: { x: 1.325, y: -0.01, z: -8.2 },
+        },
+      },
+      scene,
+    ],
     controls: { maxDistance: 50000, enable: true, enableEvents: true },
   },
   {
@@ -102,26 +121,5 @@ thirdScene(threeClip, clip, 19750, 4000);
 
 fourthScene(threeClip, clip, 23750, 10000);
 
-window.threeClip = threeClip;
-// threeClip.addIncident(cameraAnimation2, 3700);
-// threeClip.addIncident(cameraAnimation3, 8700);
-// threeClip.addIncident(cameraAnimation4, 18700);
-
-// clip.addIncident(
-//   opacity(1, ".first-text-later", 2000, "linear", "@stagger(0, 2000)"),
-//   3700
-// );
-// clip.addIncident(
-//   opacity(0, ".first-text-later", 1000, "linear", "@stagger(0, 2000)"),
-//   15000
-// );
-// clip.addIncident(
-//   opacity(1, ".second-text-later", 2000, "linear", "@stagger(0, 2000)"),
-//   15200
-// );
-// clip.addIncident(
-//   opacity(0, ".second-text-later", 1000, "linear", "@stagger(0, 2000)"),
-//   25000
-// );
 // clip.addIncident(opacity(1, ".subscribe-wrapper", 500, "linear"), 28500);
 clip.addIncident(threeClip, 0);
