@@ -6,15 +6,10 @@ export const fourthScene = (
   fromDuration,
   toDuration = 1000
 ) => {
-  //   got object
+  // got object
   threeClip.addIncident(
     objectAnimation({ x: 1, y: 1, z: -8 }, parseInt(toDuration * 0.2)),
     fromDuration
-  );
-
-  threeClip.addIncident(
-    objectAnimation({ x: 2, y: 1, z: -5 }, parseInt(toDuration * 0.2)),
-    fromDuration + parseInt(toDuration * 0.2) + 1
   );
 
   threeClip.addIncident(
@@ -65,3 +60,4 @@ export const fourthScene = (
     fromDuration + parseInt(toDuration * 0.9) + 1
   );
 };
+

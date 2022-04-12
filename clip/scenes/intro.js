@@ -32,3 +32,4 @@ export const introScene = (threeClip, clip, fromDuration, toDuration) => {
     fromDuration + toDuration * 0.93
   );
 };
+

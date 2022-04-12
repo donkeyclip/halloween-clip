@@ -97,7 +97,7 @@ const threeClip = new threejs.Clip(
       },
       scene,
     ],
-    controls: { maxDistance: 50000, enable: true, enableEvents: true },
+    // controls: { maxDistance: 50000, enable: true, enableEvents: true },
   },
   {
     selector: ".three-clip",
@@ -123,3 +123,4 @@ fourthScene(threeClip, clip, 23750, 10000);
 
 // clip.addIncident(opacity(1, ".subscribe-wrapper", 500, "linear"), 28500);
 clip.addIncident(threeClip, 0);
+
