@@ -2,6 +2,7 @@ import { HTMLClip, loadPlugin, AudioPlayback } from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "!!raw-loader!./clip.css";
 import { initParams } from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 import threejsDefinition from "@donkeyclip/motorcortex-threejs";
 const threejs = loadPlugin(threejsDefinition);
 import { scene, sceneAnimation, ground, cameraLookAt } from "./incidents";
@@ -16,6 +17,7 @@ export const clip = new HTMLClip({
   html,
   css,
   host: document.getElementById("clip"),
+  initParamsValidationRules,
   initParams: initParams[0].value,
   fonts: [
     {
