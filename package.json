@@ -29,12 +29,12 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "7.16.12",
-    "@babel/eslint-parser": "7.16.5",
+    "@babel/core": "7.25.9",
+    "@babel/eslint-parser": "7.25.9",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/plugin-syntax-jsx": "7.16.7",
-    "@babel/plugin-transform-react-jsx": "7.16.7",
-    "@babel/preset-env": "7.16.11",
+    "@babel/plugin-syntax-jsx": "7.25.9",
+    "@babel/plugin-transform-react-jsx": "7.25.9",
+    "@babel/preset-env": "7.25.9",
     "@donkeyclip/motorcortex": "^9.5.4",
     "@donkeyclip/motorcortex-player": "^2.9.5",
     "@donkeyclip/video-renderer": "1.4.2",
